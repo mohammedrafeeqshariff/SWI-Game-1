@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+/* Title and Result Section */
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+h2 span {
+    font-weight: bold;
+    color: #0077cc;
+}
+
+/* Buttons Styling */
+button {
+    font-size: 18px;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0077cc;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    background-color: #005fa3;
+    transform: scale(1.1);
+}
+
+/* Layout Styling */
+#comp-choice, #user-choice, #result {
+    font-size: 24px;
+    color: #555;
+}
+
+/* Button Container Styling */
+button {
+    font-size: 20px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+/* Optional Result Styling */
+#result {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+#result.YouWin {
+    color: green;
+}
+
+#result.YouLose {
+    color: red;
+}
+
+#result.tie {
+    color: gray;
+}
